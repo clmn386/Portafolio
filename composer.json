@@ -1,0 +1,19 @@
+{
+    "name": "mr/portafolio",
+    "description": "portafolio Trabajo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models"
+        }
+    },
+    "authors": [
+        {
+            "name": "clmn386",
+            "email": "clmn386@gmail.com"
+        }
+    ],
+    "require": {}
+}
