@@ -13,8 +13,19 @@ body {
     display: flex;
     flex-direction: column;
     background-color: v.$grey;
-    color: v.$blue_dark;
+    color: v.$red   ;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
 }
