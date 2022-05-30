@@ -7,13 +7,17 @@ html {
 }
 body {
     font-family: v.$font;
-    font-size: v.$i_bold;
+    font-size: v.$bold;
 
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: v.$silver;
+    background-color: v.$yellow;
     color: v.$black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
 }
 *, *:before, *:after {
     box-sizing: inherit;

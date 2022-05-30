@@ -1,0 +1,50 @@
+@use 'variables' as v;
+
+// Media Query
+@mixin phone {
+    @media (min-width: v.$phones) {
+        @content;
+    }
+}
+@mixin table {
+    @media (min-width: v.$tables) {     
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktops) {   
+        @content;
+    }
+}
+@mixin large_desktop {
+    @media (min-wid: v.$large_desktop) {
+        @content;
+    }
+}
+
+@mixin boton($bgColor, $textcolor) {
+    background-color: $bgColor;
+    padding: 1.5rem 4rem;
+    color: $textcolor;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: v.$regular;
+    display: inline-block;
+    border:none;
+    transition-property: background-color;
+    transition-duration: .3s;
+    text-align: center;
+    // display: block;
+    width:100%;
+    margin: 5rem 0;
+    border-radius: 1rem;
+    
+
+    @include table{
+        width: auto;
+    }
+    &:hover {
+        background-color: darken($bgColor, 10%);
+        cursor: pointer;
+    }
+}
