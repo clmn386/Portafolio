@@ -2,7 +2,8 @@
 @use 'base/mixins' as m;
 
 .body {
-    background-color: v.$bg;
+    
+    background-color: v.$yellow;
     display:grid;
     gap:1rem;
     
@@ -23,15 +24,23 @@
 .barra{
     grid-area: 2 / 1;
     background-color: v.$black;
-    ul{
-        font-family: v.$font;
-        font-size: v.$medium;
-    }
+    background-color: rgb(0, 43, 43);
 }
 .contenido {
     grid-area: 3 / 1;
     display: flex;
     flex-direction:column;
+    justify-content: space-around;
+
+}
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenido-iconos {
+    display:flex;
+
+    justify-content: space-around;
 }
 .footer{
  grid-area: 4 / 1;
